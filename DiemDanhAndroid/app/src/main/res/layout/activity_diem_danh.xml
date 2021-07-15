@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DiemDanhActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_layout"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:padding="@dimen/margin_5dp">
+
+            <TextView
+                android:id="@+id/tv_ten_hoc_phan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_ma_lop_hoc_phan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_si_so"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_so_tin_chi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Kiểu điểm danh"
+                    android:textColor="#009688"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/sp_kieu_diem_danh"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:autofillHints="Kiểu điểm danh"
+                    android:background="@drawable/bg_spinner_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Số tiết học"
+                    android:textColor="#009688"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/sp_so_tiet_hoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:autofillHints="Số tiết học"
+                    android:background="@drawable/bg_spinner_default" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Header recyclerview-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_col_view"
+                android:gravity="center"
+                android:text="STT" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_col_view"
+                android:gravity="center"
+                android:text="Mã sinh viên" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_col_view"
+                android:gravity="center"
+                android:text="Tên sinh viên" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_sinh_vien"
+        android:layout_below="@id/header"
+        android:layout_above="@id/layout_buttom"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout_buttom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_quet"
+            android:text="Quét"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_10dp"
+            android:background="@drawable/bg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_margin="@dimen/margin_10dp"
+            android:id="@+id/btn_diem_danh"
+            android:text="Điểm danh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

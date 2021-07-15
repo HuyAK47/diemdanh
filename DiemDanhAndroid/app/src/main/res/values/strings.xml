@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Điểm danh</string>
+
+    <string name="txt_huy_bo">Hủy</string>
+
+    <string name="txt_ho_ten">Họ tên: %s</string>
+    <string name="txt_ma_sinh_vien">Mã sinh viên: %s</string>
+    <string name="txt_lop">Lớp: %s</string>
+
+    <string name="txt_ten_dang_nhap">Tên đăng nhập</string>
+    <string name="txt_mat_khau">Mật khẩu</string>
+    <string name="txt_mat_khau_moi">Mật khẩu mới</string>
+    <string name="txt_xac_nhan_mat_khau_moi">Xác nhận mật khẩu mới</string>
+    <string name="txt_login">Đăng nhập</string>
+    <string name="txt_change_password">Đổi mật khẩu</string>
+    <string name="txt_change_password_success">Đổi mật khẩu thành công</string>
+    <string name="txt_mat_khau_moi_khong_khop">Xác nhận mật khẩu mới không trùng nhau</string>
+    <string name="err_not_null">Trường này không được để trống</string>
+    <string name="login_error">Tài Khoản hoặc mật khẩu không chính xác</string>
+    <string name="not_bluettoth_in_device">Ứng dựng không hoạt động trên thiết bị này</string>
+    <string name="error_get_ma_sv">Có lỗi sảy ra vui lòng đăng nhập lại</string>
+    <string name="list_class">Danh sách lớp học</string>
+
+    <string name="txt_ma_hoc_phan">Mã học phần: %s</string>
+    <string name="txt_ten_hoc_phan">Tên Học phần: %s</string>
+    <string name="txt_so_tin_chi">Số tín chỉ: %d</string>
+    <string name="txt_so_tiet_diem_danh">Số tiết học đã điểm danh: %s</string>
+    <string name="txt_diem_cc">Điểm chuyên cần: %s</string>
+    <string name="txt_diem_tx">Điểm thường xuyên: %s</string>
+    <string name="txt_diem_thi">Điểm thi: %s</string>
+    <string name="txt_hint_diem_cc">Điểm chuyên cần</string>
+    <string name="txt_hint_diem_tx">Điểm thường xuyên</string>
+    <string name="txt_hint_diem_thi">Điểm thi</string>
+    <string name="txt_ket_qua_diem_danh">Kết quả điểm danh</string>
+
+
+    <string name="txt_ten_giao_vien">Giáo viên: %s</string>
+    <string name="txt_hoc_vi">Học vị: %s</string>
+    <string name="txt_ma_lop_hoc_phan">Mã lớp học phần: %s</string>
+    <string name="txt_si_so">Sĩ số: %d</string>
+    <string name="txt_dang_thuc_hien_diem_danh">Đang thực hiện điểm danh...</string>
+    <string name="txt_dang_thuc_hien_quet_thiet_bi">Đang thực hiện quét sinh viên...</string>
+    <string name="txt_diem_danh">Điểm danh</string>
+    <string name="txt_canh_bao">Cảnh báo</string>
+    <string name="txt_rooted">Cảnh báo thiết bị đã Root, kông thể xử dụng được ứng dụng</string>
+    <string name="txt_scan_device">Quét sinh viên</string>
+    <string name="txt_double_device">Danh sách sinh viên trùng MAC</string>
+    <string name="txt_xac_nhan_truoc_diem_danh">Xác nhận thông tin trước khi điểm danh</string>
+    <string name="txt_mesage_xac_nhan_truoc_diem_danh">Loại điểm danh: %s \nSố tiết điểm danh: %s</string>
+    <string name="txt_thong_tin_sv">Thông tin sinh viên</string>
+    <string name="txt_xoa_sinh_vien">Xóa</string>
+    <string name="txt_nhap_ma_sv">Nhập mã sinh viên</string>
+    <string name="txt_nhap_tong_so_tiet">Nhập tổng số tiết của môn học</string>
+    <string name="txt_dialog_tem_sinh_vien">Thêm sinh viên</string>
+    <string name="txt_xuat_file_csv">Xuất file CSV</string>
+    <string name="txt_dang_xuat_file">Đang xuất file CSV...</string>
+    <string name="txt_xuat_file_thanh_cong">Xuất file thành công</string>
+    <string name="txt_setup_check_in_manual">Cài đặt hệ số điểm danh</string>
+    <string name="mes_setup_check_in_manual">Hãy lựa chọn cài đặt hệ số điểm danh cho sinh viên này.</string>
+    <string name="title_tinh_diem_chuyen_can">Tính điểm chuyên cần</string>
+    <string name="message_tinh_diem_chuyen_can">Tính điểm chuyên cần của sinh viên dựa trên số tiết sinh viên đã đi học theo công thức
+    \nĐiểm CC = (số tiết học : tổng số tiết)x10 </string>
+    <string name="txt_error_chua_nhap_tong_so_tiet">Hãy nhập tổng số tiết của môn học</string>
+
+    <!--Text string spinner-->
+    <string name="txt_diem_danh_mot_tiet">Điểm danh 1 tiết</string>
+    <string name="txt_diem_danh_dau_buoi">Điểm danh đầu buổi</string>
+    <string name="txt_diem_danh_cuoi_buoi">Điểm danh cuối buổi</string>
+    <string name="txt_diem_danh_ca_buoi">Điểm danh cả buổi</string>
+    <string name="txt_khong_diem_danh">Không điểm danh</string>
+
+    <string name="txt_1_tiet">1</string>
+    <string name="txt_1_5_tiet">1.5</string>
+    <string name="txt_2_tiet">2</string>
+    <string name="txt_2_5_tiet">2.5</string>
+    <string name="txt_3_tiet">3</string>
+    <string name="txt_4_tiet">4</string>
+    <string name="txt_5_tiet">5</string>
+    <string name="txt_6_tiet">6</string>
+</resources>

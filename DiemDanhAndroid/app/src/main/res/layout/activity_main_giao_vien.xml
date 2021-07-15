@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainGiaoVienActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5dp">
+
+            <TextView
+                android:id="@+id/tv_ho_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ten_giao_vien"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_hoc_vi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_hoc_vi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_10dp"
+            android:layout_marginBottom="@dimen/margin_top_10dp"
+            android:gravity="center"
+            android:text="@string/list_class"
+            android:textColor="#2F8CEA"
+            android:textSize="28dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_list_lop_hoc_phan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn"
+            android:src="@drawable/ic_log_out" />
+    </LinearLayout>
+
+</FrameLayout>

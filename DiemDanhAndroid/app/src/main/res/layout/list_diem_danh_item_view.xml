@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5dp"
+    android:background="@drawable/bg_item_hoc_phan"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5dp"
+        android:src="@drawable/ic_baseline_check_circle_outline_60" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ngay_diem_danh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16_sp" />
+
+        <TextView
+            android:id="@+id/tv_ma_mac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:textSize="@dimen/text_size_16_sp" />
+        <TextView
+            android:id="@+id/tv_info_kieu_va_tiet_diem_danh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:textSize="@dimen/text_size_16_sp" />
+    </LinearLayout>
+</LinearLayout>

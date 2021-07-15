@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HocPhanActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="@dimen/margin_5dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_ma_hoc_phan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ma_hoc_phan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+            <TextView
+                android:id="@+id/tv_ten_hoc_phan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ten_hoc_phan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+            <TextView
+                android:id="@+id/tv_so_tin_chi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_so_tin_chi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_diem_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_diem_cc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_diem_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_diem_tx"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/tv_diem_thi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_diem_thi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16_sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_10dp"
+            android:layout_marginBottom="@dimen/margin_top_10dp"
+            android:gravity="center"
+            android:text="@string/txt_ket_qua_diem_danh"
+            android:textColor="#2F8CEA"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tv_so_buoi_diem_danh_cua_sv"
+            android:textSize="@dimen/text_size_20_sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_list_diem_danh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

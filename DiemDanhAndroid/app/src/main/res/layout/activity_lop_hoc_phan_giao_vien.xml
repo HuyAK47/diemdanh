@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LopHocPhanGiaoVienActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header_layout"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_5dp">
+
+                <TextView
+                    android:id="@+id/tv_ten_hoc_phan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16_sp" />
+
+                <TextView
+                    android:id="@+id/tv_ma_lop_hoc_phan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16_sp" />
+
+                <TextView
+                    android:id="@+id/tv_si_so"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16_sp" />
+
+                <TextView
+                    android:id="@+id/tv_so_tin_chi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16_sp" />
+
+                <TextView
+                    android:id="@+id/tv_so_tiet_diem_danh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16_sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/id_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:queryHint="@string/txt_nhap_ma_sv"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/bg_search_view"
+                android:paddingLeft="@dimen/padding_5dp" />
+
+            <!--Header recyclerview-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_col_view"
+                    android:gravity="center"
+                    android:text="#" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_col_view"
+                    android:gravity="center"
+                    android:text="Mã sinh viên" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/bg_col_view"
+                    android:gravity="center"
+                    android:text="Tên sinh viên" />
+
+                <TextView
+                    android:text="ST"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_col_view"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="CC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_col_view"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_sinh_vien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:layout_above="@id/layout_buttom"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/size_40_dp" />
+
+        <LinearLayout
+            android:background="@drawable/ic_image_button_default"
+            android:id="@+id/layout_buttom"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:id="@+id/btn_diem_danh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textSize="@dimen/text_size_12_sp"
+                android:src="@drawable/ic_baseline_check_circle_outline_50"
+                android:background="@drawable/bg_image_button"
+                android:text="Điểm danh" />
+
+            <ImageButton
+                android:id="@+id/btn_xuat_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@drawable/ic_baseline_import_export_50"
+                android:textSize="@dimen/text_size_12_sp"
+                android:background="@drawable/bg_image_button"
+                android:text="Xuất file" />
+
+            <ImageButton
+                android:id="@+id/btn_tinh_diem_cc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@drawable/ic_baseline_calculator_points_50"
+                android:textSize="@dimen/text_size_12_sp"
+                android:background="@drawable/bg_image_button"
+                android:text="Xuất file" />
+
+            <ImageButton
+                android:id="@+id/btn_them_sinh_vien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@drawable/ic_baseline_add_circle_outline_50"
+                android:textSize="@dimen/text_size_12_sp"
+                android:background="@drawable/bg_image_button"
+                android:text="Thêm sinh viên" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
